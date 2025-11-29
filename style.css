@@ -2,15 +2,15 @@
   --content-width: 960px;}
 
 html {font-family: "Verdana"; font-size: 18px;}
-body {margin: 0 auto; text-align: center; background: pink; line-height: normal;}
+body {margin:0 auto; text-align: center; background: pink; line-height: normal;}
 
 p {margin:0 0 20 0;}
 .small-text {margin:0; font-size:14px;}
 
 h1 {margin:0; font-size: 64px; padding-bottom: 30px;}
-h2 {margin:0; font-size: 36px; padding-bottom: 10px;}
+h2 {margin:0; font-size: 42px; color: red; padding-bottom: 10px;}
 h3 {margin:0; font-size: 24px; padding-bottom: 10px;}
-h4 {margin:0;}
+h4 {margin:0; font-size: 18px;}
 
 ul {list-style: none; padding-left: 0;}
 li {padding-bottom: .8em;}
@@ -18,34 +18,29 @@ ol {margin:0; list-style-position:inside; padding-left: 0;}
 
 a {color: blue;}
 a:hover {color: blue;}
-a#logo {text-decoration: none; color:red;}
-a#logo:hover {color:purple;}
 
-#header {margin: 0 auto; position: fixed; top:0; width: 100%; background: gold;}
-  #nav {margin: 0 auto; width: var(--content-width);}
-#footer {margin: 0 auto; width: 100%; background: gold;}
+.nav {display: flex; justify-content: center;}
+.nav a {margin-left: 2px; margin-right: 2px; background: lime; border: 2px solid blue; text-decoration: none; padding: 10px;}
+.nav a:hover {background: yellow;}
 
-ul.nav {margin: 0; display: flex; justify-content: center; padding-top: 6px;}
-.nav a {text-decoration: none; padding: 10px;}
-#header .nav a:hover {background: yellow;}
+.heading {padding: 20px;}
+#main {margin-top: 20px; margin-bottom: 20px; margin-left: auto; margin-right: auto; width: var(--content-width);}
+
+#header {margin: 0 auto; width: var(--content-width); padding-top: 5px;}
+#footer {margin: 0 auto; width: var(--content-width); background: white; border: 2px solid black; padding-top: 5px; padding-bottom: 5px;}
+
+#songs-i-wrote,
+#videos,
+#shows,
+#archive {margin: 0 auto; padding-top: 40px; padding-bottom: 40px;}
+#live-videos {margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; grid-gap: 20px;}
 
 #copyright {padding-top: 10px; padding-bottom: 10px;}
 
-#title {margin: 0 auto; margin-top: 100px;}
-#main {margin: 0 auto; margin-top: 60px;}
-  #stream-nav {margin: 0 auto; background: white; border: 2px solid black; padding: 5px;}
-  #stream-nav a {margin-left: 2px; margin-right: 2px; background: lime; border: 2px solid blue; padding: 2px;}
-  #stream-nav a:hover {background: yellow;}
-  #heading,
-  #music-videos,
-  #songs-i-wrote,
-  #shows,
-  #archive {margin: 0 auto; width:var(--content-width); padding-bottom: 60px;}
-  #live-videos {margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; grid-gap: 20px; width:var(--content-width); padding-bottom: 60px;}
-  iframe {width:100%; aspect-ratio: 16/9; padding-top: 20px; padding-bottom: 60px;}
-
-img#portrait {width: 800px; padding: 20px;}
+img#logo {width: 400px; padding: 10px;}
+img#portrait {width: 800px; padding-top: 10px; padding-bottom: 100px;}
 img#cover {width: 60%; padding: 20px;}
+iframe {margin-top: 10px; margin-bottom: 40px; width:100%; aspect-ratio: 16/9;}
 
 /* Songs I Wrote page*/
 audio {padding-top: 1em;}
@@ -53,44 +48,33 @@ audio {padding-top: 1em;}
 #blondes {display: none;}
 
 @media screen and (max-width: 980px) {
-  :root {
-    --content-width: ;}
-  html {}
-  body {}
-  h1 {font-size: 48px; padding-bottom: 20px;}
-  h2 {font-size: 24px; padding-bottom: 5px;}
   h3 {font-size: 24px; padding-bottom: 5px;}
-  h4 {font-size:;}
-  #header {}
-  #footer {}
-  #title {margin-top: 80px;}
-  #main {padding-top:; padding-left: 10px; padding-right: 10px;}
-  img#portrait {width: 80%; padding: 10px 0px 10px 0px;}
-  img#cover {width: 80%; padding: 10px 0px 10px 0px;}
+  h4 {font-size: 16px;}
+
+  .heading {padding: 20px;}
+  #main {width: 95%;}
+  #header {margin: 0 auto; width: 95%; padding-top: 5px;}
+  #footer {margin: 0 auto; width: 95%; background: white; border: 2px solid black; padding-top: 5px; padding-bottom: 5px;}
   #live-videos {grid-template-columns: 1fr;}
-  iframe {padding-bottom: 40px;}
+
+  iframe {width: 95%;}
 }
 
 @media screen and (max-width: 600px) {
   html {font-size: 14px;}
-  body {margin:0;}
-  p {}
   .small-text {font-size:11px;}
   h1 {font-size: 36px;padding-bottom: 10px;}
-  h2 {font-size: 20px;padding-bottom: 0px;}
-  h3 {font-size: 20px;}
+  h2 {font-size: 28px;padding-bottom: 10px;}
+  h3 {font-size: 20px;padding-bottom: 0px;}
   h4 {font-size: 16px;padding-bottom: 0px;}
   ul.nav {flex-wrap: wrap;}
-    .nav li {}
-  #title {margin-top: 40px;}
-  #music-videos,
+  #header {padding-bottom: 20px;}
   #songs-i-wrote,
+  #videos,
   #shows,
-  #archive {width: 100%; padding-bottom: 20px;}
-  #live-videos {padding-bottom: 40px;}
-    #music-videos iframe {width:100%; aspect-ratio: 16/9; padding-top: 20px; padding-bottom: 20px;}
-    #live-videos iframe {width:100%; aspect-ratio: 16/9; padding-top: 20px; padding-bottom: 20px;}
-  img#portrait {width: 100%;}
-  img#cover {width: 100%;}
-  iframe {}
+  #archive {padding-top: 20px; padding-bottom: 20px;}
+  img#logo {width: 95%; padding: 10px;}
+  img#portrait {width: 95%; padding-top: 10px; padding-bottom: 140px;}
+  img#cover {width: 95%; padding: 10px;}
+  iframe {margin-top: 10px; margin-bottom: 20px;}
 }
