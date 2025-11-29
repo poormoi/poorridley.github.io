@@ -1,8 +1,8 @@
 :root {
   --content-width: 960px;}
 
-html {font-family: "Verdana"; font-size: 18px;}
-body {margin:0 auto; text-align: center; background: pink; line-height: normal;}
+html {font-family: "Verdana"; font-size: 18px; background: pink;}
+body {margin:0 auto; text-align: center; line-height: normal;}
 
 p {margin:0 0 20 0;}
 .small-text {margin:0; font-size:14px;}
@@ -68,6 +68,7 @@ audio {padding-top: 1em;}
   h3 {font-size: 20px;padding-bottom: 0px;}
   h4 {font-size: 16px;padding-bottom: 0px;}
   ul.nav {flex-wrap: wrap;}
+  .nav li {padding-bottom: 2em;}
   #header {padding-bottom: 20px;}
   #songs-i-wrote,
   #videos,
