@@ -2,10 +2,10 @@
   --content-width: 780px;}
 
 html {font-family: "Helvetica"; font-size: 20px; color: white; text-align: center; text-transform: uppercase; background: red;}
-body {margin:0 auto; line-height: normal;}
+body {margin: 0 auto; line-height: normal;}
 
-p {margin:0 auto;}
-p.credit {text-align: right;}
+p {margin: 0 auto; padding-bottom: 1em;}
+span.credit {text-align: right;}
 
 h1 {margin:0 auto; text-align: center; font-size: 3em;}
 h2 {margin:0 auto; text-align: center; font-size: 2em;}
@@ -31,23 +31,23 @@ ul.nav {display: flex; flex-wrap: wrap; justify-content: center;}
 
 #main {margin:0 auto; padding-top: 20px; padding-bottom: 20px; width: var(--content-width);}
 
-#header {margin: 0 auto; width: auto; padding-top: 5px; margin-bottom: 50px;}
+#header {margin: 0 auto; width: auto; padding-top: 5px; margin-bottom: 30px;}
 #footer {margin: 0 auto; width: auto; font-size: 16px; border: 2px solid lime; background: black; padding: 20px;}
 
 #songs-i-wrote,
-#videos {margin: 0 auto; padding-top: 50px; margin-bottom: 50px;}
+#videos {margin: 0 auto; margin-bottom: 20px;}
 
 #shows, #archive {margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; margin-bottom: 50px;}
 #shows div, #archive div {margin-bottom: 30px;}
 #shows .heading, #archive .heading {display: grid; grid-column: 1/-1;}
 
 .quote {
-  margin: 0 auto; margin-bottom: 20px; width: 90%;
+  margin: 0 auto; margin-bottom: 20px; width: auto;
   font-family: "Times"; text-align: justify; text-transform: none;
   border: 2px solid lime; background: black;
   padding: 20px;}
 
-a#logo, img#logo {margin:0 auto; display: block; width: auto; background: none; padding: none;}
+a#logo, img#logo {margin:0 auto; display: block; width: 400px; background: none; padding: none;}
 img#portrait {margin:0 auto; display: block; width: 100px; filter: grayscale(100%); padding: 20px 0px 0px 0px;}
 img#cover {margin:0 auto; display: block; width: 60%; padding-bottom: 20px;}
 img.flyer {margin:0 auto; height: 400px; padding-bottom: 10px;}
@@ -59,17 +59,19 @@ audio {padding-top: 1em;}
 #blondes {display: none;}
 
 @media screen and (max-width: 780px) {
-  html {width: auto;}
+  html {width: auto; font-size: 16px; padding: 10px;}
   h1 {font-size: 2.2em;}
   h2 {font-size: 1.6em;}
   h3 {font-size: 1em;}
-  #main {width:auto;padding: 10px;}
-  #header, #footer {width: auto;}
+  #main {width:auto;}
+  #header,
+  #footer {width: auto;}
   ul.nav {flex-wrap: wrap;}
   #songs-i-wrote,
   #videos,
-  #shows, #archive {margin: 0 auto; display: grid; grid-template-columns: 1fr; margin-bottom: 50px;}
-  img#logo {width: 60%;}
+  #shows,
+  #archive {margin: 0 auto; display: grid; grid-template-columns: 1fr; margin-bottom: 20px;}
+  img#logo {width: 70%;}
   img#cover {width: 90%;}
   iframe {margin-top: 10px; margin-bottom: 20px;}
 }
