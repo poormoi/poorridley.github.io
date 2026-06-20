@@ -1,7 +1,7 @@
 :root {
   --content-width: 780px;}
 
-html {font-family: "Helvetica"; font-size: 20px; color: white; text-align: center; text-transform: uppercase; background: red;}
+html {margin: 0 auto; font-family: "Helvetica"; font-size: 20px; color: white; text-align: center; text-transform: uppercase; background: red;}
 body {margin: 0 auto; line-height: normal;}
 
 p {margin: 0 auto; padding-bottom: 1em;}
